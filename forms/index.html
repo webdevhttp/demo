@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms
+
+    </title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal data</legend>
+            <div></div>
+            <label for="name">Your Name</label>
+
+            <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+
+                <label for="surname">Your Surname</label>
+
+                <input type="text" id="surname" name="surname" required minlength="3" maxlength="6">
+            </div>
+            <div>
+
+                <label for="email">Your Email</label>
+
+                <input type="text" id="email" name="email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+            </div>
+            <div>
+
+                <label for="phone">Your Phone</label>
+
+
+                <input type="tel" id="phone" name="tel" required>
+            </div>
+            <fieldset>
+                <legend> Enter Your Password </legend>
+
+                <div>
+
+                    <label for="password">Your Password</label>
+
+
+                    <input type="text" id="password">
+
+
+                    <label for="password_repeat">Repeat Password</label>
+
+
+                    <input type="text" id="password_repeat">
+                </div>
+
+
+            </fieldset>
+
+
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>nastrojki profilja</legend>
+            <input type="checkbox" id="agree" value="agree">
+            <label for="agree">Agree with the terms</label>
+            <legend>Choose your answer</legend>
+            <input type="radio" name="status" id="single" value="single">
+            <label for="single">iam single</label>
+            <input type="radio" name="status" id="married" value="married">
+            <label for="single">iam married</label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>dopolniceljnie opcii</legend>
+            <input type="date">
+            <input type="file" accept="image/png,image/jpeg">
+            <input type="color">
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="Register">
+            <input type="reset" value="Delete">
+            <input type="hidden" name="userid" value="1">
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>How many items</legend>
+            <input type="number" name="" id="" min="0" max="20" step="1">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Tell us more about delivery options</legend>
+            <textarea name="bio" id="" placeholder="More Info" col="30" max="10" ></textarea>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Delivery date</legend>
+            <select name="" >
+                <option value="Choose the Date">Choose the Date</option>
+                <option value="10/05/2022">10/05/2022</option>
+                <option value="11/05/2022">11/05/2022</option>
+                <option value="12/05/2022">12/05/2022</option>
+            </select>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
